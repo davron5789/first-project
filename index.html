@@ -1,51 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Сюрприз для Тебя</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header></header>
-    <head></head>
-    <main>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div class="maintop">
-            <div class="maintop1">
-                <div>
-                    <img src="track.svg" alt="">
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div ></div>
-            </div>
-            <div class="maintop1">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-            <div class="maintop1">
-                <div></div>
-                <div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
+
+    <!-- Loading sahifasi -->
+    <div id="loading-page">
+        <h1>Подождите немного...</h1>
+        <div class="heart-animation"></div>
+    </div>
+
+    <!-- Asosiy sahifa -->
+    <div id="main-page" style="display: none;">
+        <h1>Привет, Любимая!</h1>
+        <p>Я так сильно тебя люблю! </p>
+
+        <div class="romantic-section">
+            <h2>Твое имя на звездах</h2>
+            <input type="text" id="star-name" placeholder="Введите ваше имя">
+            <button id="star-btn">Засветить на небе</button>
+            <div id="star-result"></div>
         </div>
-    </main>
 
-    
+        <div class="romantic-section">
+            <h2>Любовные пожелания</h2>
+            <button id="wish-btn">Получить пожелание</button>
+            <div id="wish-result"></div>
+        </div>
 
-    <script src="main.js"></script>
+        <div class="romantic-section">
+            <h2>Случайный сюрприз</h2>
+            <button id="random-surprise-btn">Открыть сюрприз</button>
+            <div id="random-surprise-result"></div>
+        </div>
+
+        <!-- Qo'shimcha interaktiv tugmalar -->
+        <div class="romantic-section">
+            <h2>Что мне нравится в тебе</h2>
+            <button id="reveal-likes-btn">Посмотреть</button>
+            <div id="likes-result"></div>
+        </div>
+
+        <div class="romantic-section">
+            <h2>Цветок для тебя</h2>
+            <button id="flower-btn">Получить цветок</button>
+            <div id="flower-result"></div>
+        </div>
+
+        <div class="romantic-section">
+            <h2>Особенное место</h2>
+            <input type="text" id="special-place" placeholder="Введите любимое место">
+            <button id="place-btn">Открыть</button>
+            <div id="place-result"></div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
